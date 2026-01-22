@@ -28,7 +28,7 @@ const STORAGE_KEY = '@alex_tasks';
 const META_KEY = '@alex_meta';
 const NOTIFICATION_SETTING_KEY = '@alex_notification_enabled';
 const THEME_STORAGE_KEY = '@alex_theme';
-const GEMINI_API_KEY = "AIzaSyBWovlxoeW7T_MesD4y5DnPEUMHns5jCtc";
+const GEMINI_API_KEY = process.env.EXPO_PUBLIC_GEMINI_API_KEY || "";
 
 interface AiTask {
   title: string;
